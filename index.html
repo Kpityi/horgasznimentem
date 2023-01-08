@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,800;1,400;1,800&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="style.css">
+  <title>Horgászni mentem</title>
+</head>
+<body>
+  <h1>Horgászni mentem</h1>
+  <!-- weather -->
+  <div class="card">
+    <h2>Időjárás</h2>
+    <form id="search-box">
+      <input type="search" name="search" id="search-bar" placeholder="Hely keresése">
+      <button  id="submit">
+        <span class="material-symbols-outlined"> search </span>
+      </button> 
+    </form>
+    <div id="result">
+    </div>
+  </div>
+
+  <!-- openweather api 8 day -->
+  <div id="eight-day">
+    <div id="openweathermap-widget-11"></div>
+  </div>
+  
+
+  <!-- solunar calendar -->
+  <div class="calendar-box">
+    <h2>Solunáris naptár 2023</h2>
+    <img class="solunar-img" src="./img/szolunarisnaptar2023.jpg" alt="solunaris naptár">
+  </div>
+
+  <!-- Hydroinfo -->
+  <div class="hydroinfo">
+    <h2>Vízállás adatok</h2>
+    <iframe class="import1" src="https://www.hydroinfo.hu/tables/dunhif_f.html" title="head"></iframe>
+    <iframe class="import2" src="https://www.hydroinfo.hu/tables/dunhif_a.html" title="table"></iframe>
+    <iframe class="import2" src="https://www.hydroinfo.hu/tables/tishif_a.html" title="table"></iframe>
+
+  </div>
+
+  
+  <script src="app.js" defer></script>
+  <script src='//openweathermap.org/themes/openweathermap/assets/vendor/owm/js/d3.min.js'></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js" ></script>
+</body>
+</html>
